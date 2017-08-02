@@ -24,7 +24,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named:"art.scnassets/tree.dae")!
+        
+        //Demo Scene
+        //let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        
         
         // Set the scene to the view
         sceneView.scene = scene
