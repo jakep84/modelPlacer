@@ -11,7 +11,7 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
+    var treeNode: SCNNode?
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -21,13 +21,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         // Create a new scene
         let scene = SCNScene(named:"art.scnassets/tree.dae")!
         
-        //Demo Scene
-        //let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        //access the model node
+        let treeNode = scene.rootNode.childNode(withName: "Tree_lp_11", recursively: true)
+        
+        //move the tree into view
+        treeNode?.position = SCNVector3Make(0, 0, -1)
         
         
         // Set the scene to the view

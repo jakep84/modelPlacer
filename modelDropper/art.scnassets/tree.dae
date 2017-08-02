@@ -4,8 +4,8 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2017-08-02T15:42:22Z</created>
-  <modified>2017-08-02T15:42:22Z</modified>
+  <created>2017-08-02T16:06:19Z</created>
+  <modified>2017-08-02T16:06:19Z</modified>
   <unit meter="0.001000"/>
   <up_axis>Y_UP</up_axis>
  </asset>
@@ -289,6 +289,7 @@
     <instance_light url="#Light-polyRender006"/>
    </node>
    <node id="Geometry-mesh022Node" name="Tree_lp_11">
+    <matrix>0.1 0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 1 </matrix>
     <instance_geometry url="#geometry3">
      <bind_material>
       <technique_common>
